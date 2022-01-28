@@ -1,26 +1,23 @@
 import { StatusBar } from "expo-status-bar";
-import 'react-native-gesture-handler';
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import CareerDevelopment from './src/Components/CareerDevelopment';
 import Portofolio from './src/Components/Portofolio';
 import Profile from "./src/Components/Profile";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Education from "./src/Components/Education";
+import { useState } from "react";
+import Header from "./src/Components/Header";
 
-const Stack = createNativeStackNavigator();
 export default function App() {
+  const [page,setPage]=useState("Profile")
   return (
 
     <SafeAreaView style={styles.container}>
-      <NavigationContainer>
-      <Stack.Navigator initialRouteName="Profile">
-        <Stack.Screen name="Profile" component={Profile} />
-      <Stack.Screen name="CareerDevelopment" component={CareerDevelopment} />
-      <Stack.Screen name="Portofolio" component={Portofolio} />
-      <Stack.Screen name="ContactHabteab" component={ContactHabteab} />
-
-      </Stack.Navigator>  
-      </NavigationContainer>  
+      <Header setPage={setPage}/>
+       {page === "Profile" && <Profile />}
+          {page === "CareerDevelopment" && <CareerDevelopment />}
+          {page === "Portofolio" && <Portofolio/>}
+          {page === "Education" && <Education/>}
+      
       <StatusBar style="auto" /> 
       </SafeAreaView>
       

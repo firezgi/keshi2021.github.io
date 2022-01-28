@@ -1,110 +1,58 @@
-import React, { useState } from "react";
-import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
-import LoginPage from "./LoginPage";
-import { NavigationContainer } from "@react-navigation/native";
-
-function Header({ navigation, }) {
+import React from "react";
+import {
+  View,
+  StyleSheet,
+  Text,
+  Pressable,
+  useWindowDimensions,
+} from "react-native";
+// import { stylesMobile, stylesWeb } from "./Styles";
+function Header({ setPage }) {
+  // const { width } = useWindowDimensions();
+  // const widthBreakpoint = 1050;
+  // let styles;
+  // if (width < widthBreakpoint) {
+  //   styles = stylesMobile;
+  // } else {
+  //   styles = stylesWeb;
+  // }
   return (
-    <View style={styles.headerContainer}>
-      <View style={styles.header}>
-        <View style={styles.logoutLink}>
-          <Text
-            onPress={() => {
-              navigation.navigate("Login");
-            }}
-          >
-            Logout
-          </Text>
-        </View>
-        <View style={styles.logoContainer}>
-          <TouchableOpacity onPress={() => navigation.navigate("NewsFeed")}>
-            <Image
-              source={require("./img/marvelSpace.png")}
-              style={{
-                width: 200,
-                height: 100,
-                resizeMode: "contain",
-              }}
-            ></Image>
-          </TouchableOpacity>
-        </View>
+    <View >
+      <View>
+        <Pressable onPress={() => setPage("Profile")}>
+          <View>
+            <View>
+              <Text>Hab</Text>
+            </View>
+          </View>
+        </Pressable>
       </View>
-      <View style={styles.navBar}>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("NewsFeed")}
-        >
-          NewsFeed
-        </Text>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("Friends")}
-        >
-          Friends
-        </Text>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("Profile")}
-        >
-          Profile
-        </Text>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("PhotoGallery")}
-        >
-          Photos
-        </Text>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("Messages")}
-        >
-          Messages
-        </Text>
-        <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("Search")}
-        >
-          Search
-        </Text>
+      <View>
+        <View >
+          <Pressable onPress={() => setPage("Profile")}>
+            <Text  name="Profile">
+              Profile
+            </Text>
+          </Pressable>
+          <Pressable onPress={() => setPage("Portofolio")}>
+            <Text name="Portofolio">
+            Portofolio
+            </Text>
+          </Pressable>
+          <Pressable onPress={() => setPage("CareerDevelopment")}>
+            <Text  name="CareerDevelopment">
+            CareerDevelopment
+            </Text>
+          </Pressable>
+          <Pressable onPress={() => setPage("Education")}>
+            <Text  name="Education">
+            Education
+            </Text>
+          </Pressable>
+          
+        </View>
       </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  headerContainer: {
-    // position: "sticky",
-    backgroundColor: "#16769E",
-    display: "flex",
-    top: 0,
-    width: "100%",
-    borderBottomWidth: 3,
-  },
-  header: {
-    flex: 1,
-    padding: 5,
-  },
-  logoContainer: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  logoutLink: {
-    display: 'flex',
-    alignItems: 'flex-end',
-    marginTop: 30,
-    marginRight: 30,
-  },
-  navBar: {
-    flex: 1,
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    textAlign: "center",
-    fontWeight: "bold",
-  },
-  navText: {
-    paddingTop: 25,
-  },
-});
-
 export default Header;

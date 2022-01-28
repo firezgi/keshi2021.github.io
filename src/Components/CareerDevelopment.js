@@ -8,14 +8,11 @@ import {
   SafeAreaView
 } from "react-native";
 
-const CareerDevelopment = ({navigation}) => {
+const CareerDevelopment = () => {
   return( 
       <SafeAreaView>
   <View style={styles.container}>
-  <Text
-          style={styles.navText}
-          onPress={() => navigation.navigate("Profile")}
-        >
+  <Text>
           Profile
         </Text>
       <Text style={styles.h1}>Career Development</Text>
