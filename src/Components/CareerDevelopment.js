@@ -12,9 +12,7 @@ const CareerDevelopment = () => {
   return( 
       <SafeAreaView>
   <View style={styles.container}>
-  <Text>
-          Profile
-        </Text>
+  
       <Text style={styles.h1}>Career Development</Text>
 
       
@@ -37,8 +35,8 @@ const CareerDevelopment = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "white",
+    // flex: 1,
+    backgroundColor: "#abaec4",
     alignItems: "center",
     justifyContent: "center",
   },

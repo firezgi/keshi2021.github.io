@@ -21,7 +21,7 @@ function Education() {
 
           <Text style={styles.h1}>Evangadi Networks</Text> 
           <Text style={styles.h1}>Feb2021 to Aug2021:</Text>          
-          <Text style={{fontSize:16}}>Boot camp :Full-stack web-development</Text>
+          <Text style={{fontSize:16}}>Bachelors of Arts in Economics and Finance</Text>
   
   </View>
   </SafeAreaView>
@@ -29,10 +29,13 @@ function Education() {
 }
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: "white",
-      alignItems: "center",
-      justifyContent: "center",
+    //   flex: 1,
+      backgroundColor: "#abaec4",
+    //   alignItems: "center",
+    //   justifyContent: "center",
+      paddingBottom:150,
+      paddingTop:20,
+      paddingStart:10
     },
     h1: {
       fontSize: 20,

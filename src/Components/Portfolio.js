@@ -12,7 +12,7 @@ import {
   import ECard from "../images/E-Card.png";
   import MarvelSpace from "../images/marvel-space.png";
 
-function Portofolio() {
+function Portfolio() {
   return <View style={styles.container}>
 
 
@@ -156,7 +156,7 @@ function Portofolio() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "white",
+      backgroundColor: "#abaec4",
       alignItems: "center",
       justifyContent: "center",
     },
@@ -180,4 +180,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default Portofolio;
+export default Portfolio;

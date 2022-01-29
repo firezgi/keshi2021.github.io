@@ -17,42 +17,72 @@ function Header({ setPage }) {
   //   styles = stylesWeb;
   // }
   return (
-    <View >
-      <View>
-        <Pressable onPress={() => setPage("Profile")}>
-          <View>
-            <View>
-              <Text>Hab</Text>
-            </View>
-          </View>
+    < View style={styles.container}>
+
+        <Pressable onPress={() => setPage("Home")}>
+            <Text style={styles.navtext}>Hab</Text>          
         </Pressable>
-      </View>
-      <View>
-        <View >
+      
+      
+        <Pressable onPress={() => setPage("Home")}>          
+          
+              <Text style={styles.navtext}>Home</Text>
+                     
+        </Pressable>
+      
+        
           <Pressable onPress={() => setPage("Profile")}>
-            <Text  name="Profile">
-              Profile
-            </Text>
+            <Text style={styles.navtext} name="Profile">Profile</Text>
           </Pressable>
-          <Pressable onPress={() => setPage("Portofolio")}>
-            <Text name="Portofolio">
-            Portofolio
-            </Text>
+          <Pressable onPress={() => setPage("Portfolio")}>
+            <Text style={styles.navtext} name="Portfolio">Portfolio</Text>
           </Pressable>
           <Pressable onPress={() => setPage("CareerDevelopment")}>
-            <Text  name="CareerDevelopment">
-            CareerDevelopment
-            </Text>
+            <Text style={styles.navtext} name="CareerDevelopment">Career</Text>
           </Pressable>
           <Pressable onPress={() => setPage("Education")}>
-            <Text  name="Education">
-            Education
-            </Text>
+            <Text style={styles.navtext}name="Education">Education</Text>
           </Pressable>
-          
-        </View>
-      </View>
+          <Pressable onPress={() => setPage("ContactHabteab")}>
+            <Text style={styles.navtext} name="">Contact</Text>
+          </Pressable>
     </View>
   );
 }
+const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    backgroundColor: "#063970",
+    alignItems: "center",
+    flexDirection:"row",
+    justifyContent: "space-around",
+    marginTop:20,
+    height:50
+  },
+  h1: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+  navtext:{
+    color:'white'
+
+  },
+  bold: {
+    fontWeight: "bold",
+  },
+  p: {
+    marginBottom: 20,
+  },
+  profileImage: {
+    width: "500px",
+    height: "760px",
+    maxWidth: "100%",
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+});
 export default Header;
