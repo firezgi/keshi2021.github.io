@@ -9,18 +9,18 @@ function Education() {
         <Text style={styles.h1}>Education</Text>
   
         
-          <Text style={styles.h1}>Asmara university</Text> 
-          <Text style={styles.h1}>Asmara,Eritrea- Sep 1997 to Jul 2001:</Text>          
-          <Text style={{fontSize:16}}>Bachelors of Arts in Economics and Finance</Text>
+          <Text style={styles.h2}>Asmara university</Text> 
+          <Text style={styles.h2}>Asmara,Eritrea- Sep 1997 to Jul 2001:</Text>          
+          <Text style={{fontSize:16,paddingBottom:30}}>Bachelors of Arts in Economics and Finance</Text>
 
 
-          <Text style={styles.h1}>De Anza College</Text> 
-          <Text style={styles.h1}>Cupertino,CA- October 2017 to July 2019:</Text>          
-          <Text style={{fontSize:16}}>Pursued Associated degree in Computer science</Text>
+          <Text style={styles.h2}>De Anza College</Text> 
+          <Text style={styles.h2}>Cupertino,CA- October 2017 to July 2019:</Text>          
+          <Text style={{fontSize:16,paddingBottom:30}}>Pursued Associated degree in Computer science</Text>
 
 
-          <Text style={styles.h1}>Evangadi Networks</Text> 
-          <Text style={styles.h1}>Feb2021 to Aug2021:</Text>          
+          <Text style={styles.h2}>Evangadi Networks</Text> 
+          <Text style={styles.h2}>Feb2021 to Aug2021:</Text>          
           <Text style={{fontSize:16}}>Bachelors of Arts in Economics and Finance</Text>
   
   </View>
@@ -29,11 +29,9 @@ function Education() {
 }
 const styles = StyleSheet.create({
     container: {
-    //   flex: 1,
       backgroundColor: "#abaec4",
-    //   alignItems: "center",
-    //   justifyContent: "center",
-      paddingBottom:150,
+      alignItems: "center",
+      paddingBottom:120,
       paddingTop:20,
       paddingStart:10
     },
@@ -41,6 +39,11 @@ const styles = StyleSheet.create({
       fontSize: 20,
       fontWeight: "bold",
       marginBottom: 20,
+    },
+    h2: {
+      fontSize: 18,
+      fontWeight: "bold",
+      marginBottom: 10,
     },
     bold: {
       fontWeight: "bold",

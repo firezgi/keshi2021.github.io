@@ -8,15 +8,14 @@ import { useState } from "react";
 import Header from "./src/Components/Header";
 import ContactHabteab from "./src/Components/ContactHabteab";
 import Footer from "./src/Components/Footer";
-import Home from "./src/Components/Home";
 
 export default function App() {
-  const [page, setPage] = useState("ContactHabteab");
+  const [page, setPage] = useState("Profile");
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
+        <View>
       <Header setPage={setPage} />
-      {page === "Home" && <Home/>}
         {page === "Profile" && <Profile />}
         {page === "CareerDevelopment" && <CareerDevelopment />}
         {page === "Portfolio" && <Portfolio />}
@@ -24,6 +23,7 @@ export default function App() {
         {page === "ContactHabteab" && <ContactHabteab />}
       
       <Footer setPage={setPage} />
+      </View>
       </ScrollView>
       <StatusBar style="auto" />
     </SafeAreaView>
@@ -34,8 +34,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    // alignItems: "center",
-    // justifyContent: "center",
     width:"100%"
   },
 });

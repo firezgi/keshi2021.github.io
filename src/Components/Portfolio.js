@@ -28,23 +28,6 @@ function Portfolio() {
                           </Text>
                           <Text >2021/</Text>
                         </View>
-                        {/* <View >
-                           <a
-                            href="https://github.com/keshi2021/haunted-house-game"
-                            >
-                            <i className="fab fa-github"></i>
-                          </a>
-                          <a
-                            href="http://luceroweb.github.io/haunted-house-game/"
-                            
-                          > 
-                            <TouchableOpacity
-                              type="button"
-                            >
-                              Live site
-                            </TouchableOpacity>
-                          </a> 
-                        </View> */}
                       </View>
                       <View>
                         <Text>learned and implemented react.js</Text>
@@ -62,23 +45,6 @@ function Portfolio() {
                           <Text >Decidr</Text>
                           <Text >2021/</Text>
                         </View>
-                        {/* <View >
-                          <a
-                            href="https://github.com/keshi2021/decidr"
-                            
-                          >
-                            <i className="fab fa-github"></i>
-                          </a>
-                          <a
-                            href="https://keshi2021.github.io/decidr"
-                          >
-                            <TouchableOpacity
-                              
-                            >
-                              Live site
-                            </TouchableOpacity>
-                          </a>
-                        </View> */}
                       </Text>
                       <View>
                         <Text>learned and implemented React-native</Text>
@@ -92,23 +58,7 @@ function Portfolio() {
                         <View >
                           <Text>E-Card</Text>
                           <Text >2021/</Text>
-                        </View>
-                        {/* <View >
-                          <a
-                            href="https://github.com/keshi2021/ecard"
-                          >
-                            <i className="fab fa-github"></i>
-                          </a>
-                          <a
-                            href="https://keshi2021.github.io/ecard"
-                            
-                          >
-                            <TouchableOpacity
-                            >
-                              Live site
-                            </TouchableOpacity>
-                          </a>
-                        </View> */}
+                        </View>                        
                       </View>
                       <View >
                         <Text>learned and implemented React</Text>
@@ -125,24 +75,7 @@ function Portfolio() {
                         <View>
                           <Text>Marvel Space</Text>
                           <Text>2021/</Text>
-                        </View>
-                        {/* <View>
-                          <a
-                            href="https://github.com/keshi2021/team-spider-man"
-                            className="fs-2 me-5"
-                          >
-                            <i className="fab fa-github"></i>
-                          </a>
-                          <a
-                            href="http://keshi2021.github.io/team-spider-man"
-                            className="fs-2"
-                          >
-                            <TouchableOpacity
-                            >
-                              Live Site
-                            </TouchableOpacity>
-                          </a>
-                        </View> */}
+                        </View>                        
                       </View>
                       <View >
                         <Text>learned and implemented React-native</Text>

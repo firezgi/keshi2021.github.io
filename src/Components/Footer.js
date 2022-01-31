@@ -1,7 +1,8 @@
 import React from 'react';
-import { FlatList, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Pressable, SafeAreaView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 function Footer({setPage}) {
+
   return (
     <SafeAreaView>
     <View style={styles.container}>
@@ -26,9 +27,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#063970",
       alignItems: "center",
       justifyContent: "space-around",
-      flexDirection:"row",
       padding:10,
-      height:50
     },
     h1: {
       fontSize: 20,
@@ -40,9 +39,7 @@ const styles = StyleSheet.create({
     
       },
     h2: {
-        fontSize: 16,
-        // fontWeight: "bold",
-        // marginBottom: 20,
+        fontSize: 16
       },
     bold: {
       fontWeight: "bold",

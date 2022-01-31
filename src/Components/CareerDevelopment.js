@@ -35,10 +35,10 @@ const CareerDevelopment = () => {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     backgroundColor: "#abaec4",
     alignItems: "center",
     justifyContent: "center",
+    paddingBottom:200
   },
   h1: {
     fontSize: 20,

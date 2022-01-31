@@ -75,12 +75,12 @@ function Profile() {
 }
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "red",
+    // flex: 1,
+    // backgroundColor: "red",
     // alignItems: "center",
     // justifyContent: "center",
     // flexWrap:"wrap",
-    padding:10
+    // padding:10
   },
   container1: {
     backgroundColor: "#abaec4",
