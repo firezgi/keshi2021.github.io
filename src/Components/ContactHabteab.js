@@ -18,7 +18,7 @@ function ContactHabteab() {
   const sendContactForm = () => {
     let mailto = `mailto:keshi2017@gmail.com`;
     mailto += `?subject=${subject}`;
-    mailto += `& body=${message}`;
+    mailto += `&body=${message}`;
     Linking.openURL(mailto)
   };
 

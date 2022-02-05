@@ -1,7 +1,7 @@
 import React from 'react';
-import { FlatList, Pressable, SafeAreaView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Button, FlatList, Pressable, SafeAreaView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
-function Footer({setPage}) {
+function Footer({navigation,setPage}) {
 
   return (
     <SafeAreaView>
@@ -17,6 +17,7 @@ function Footer({setPage}) {
             </View>
           
         </Pressable>
+        
   </View>
   </SafeAreaView>
   );

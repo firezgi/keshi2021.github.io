@@ -5,7 +5,8 @@ import {
     View,
     Image,
     useWindowDimensions,
-    TouchableOpacity
+    TouchableOpacity,
+    Linking
   } from "react-native";
   import Haunted from "../images/HountedHouseGame.png";
   import Decidr from "../images/Decidr.png";
