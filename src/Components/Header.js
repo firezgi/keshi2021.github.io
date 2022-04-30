@@ -9,10 +9,6 @@ function Header({ setPage }) {
   
   return (
     < View style={styles.container}>
-
-        <Pressable onPress={() => setPage("Profile")}>
-            <Text style={styles.navtext}>Habteab</Text>          
-        </Pressable>     
         
           <Pressable onPress={() => setPage("Profile")}>
             <Text style={styles.navtext} name="Profile">Profile</Text>
@@ -34,11 +30,10 @@ function Header({ setPage }) {
 }
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#063970",
+    // backgroundColor: "#063970",
     alignItems: "center",
     flexDirection:"row",
     justifyContent: "space-around",
-    marginTop:20,
     height:50
   },
   h1: {

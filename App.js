@@ -1,5 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, ScrollView, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import {
+  ImageBackground,
+  Platform,
+  SafeAreaView,
+  SafeAreaViewBase,
+  ScrollView,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import CareerDevelopment from "./src/Components/CareerDevelopment";
 import Portfolio from "./src/Components/Portfolio";
 import Profile from "./src/Components/Profile";
@@ -10,37 +20,25 @@ import ContactHabteab from "./src/Components/ContactHabteab";
 import Footer from "./src/Components/Footer";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
-
-// export default function App() {
-//   const [page, setPage] = useState("Profile");
-//   return (
-//     <SafeAreaView style={styles.container}>
-//       <ScrollView>
-//         <View>
-//       <Header setPage={setPage} />
-//         {page === "Profile" && <Profile />}
-//         {page === "CareerDevelopment" && <CareerDevelopment />}
-//         {page === "Portfolio" && <Portfolio />}
-//         {page === "Education" && <Education />}
-//         {page === "ContactHabteab" && <ContactHabteab />}
-
-//       <Footer setPage={setPage} />
-//       </View>
-//       </ScrollView>
-//       <StatusBar style="auto" />
-//     </SafeAreaView>
-//   );
-// }
+import "react-native-gesture-handler";
 
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   const window = useWindowDimensions();
   const breakpoint400 = 500;
-  const [page, setPage] = useState("Profile");
+  const [page, setPage] = useState("Portfolio");
   return (
-    <>
-    {window.width > breakpoint400?
+    <ImageBackground
+    resizeMode={"stretch"}
+    style={styles.container}
+    source={
+      Platform.OS === "web"
+        ? require("./src/images/dark.jpg")
+        : require("./src/images/dark.jpg")
+    }
+  >
+    {window.width > breakpoint400 ?
       <View>
         <Header setPage={setPage} />
         {page === "Profile" && <Profile />}
@@ -48,11 +46,10 @@ export default function App() {
         {page === "Portfolio" && <Portfolio />}
         {page === "Education" && <Education />}
         {page === "ContactHabteab" && <ContactHabteab />}
-
-        <Footer setPage={setPage} />
-      </View>
-      :
-      <>
+          
+          <Footer setPage={setPage} style={styles.footer} />
+        </View>
+       : (<>
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Profile">
           <Drawer.Screen name="Profile" component={Profile} />
@@ -62,10 +59,10 @@ export default function App() {
           <Drawer.Screen name="Contact" component={ContactHabteab} />
         </Drawer.Navigator>
       </NavigationContainer>
-      {/* <Footer setPage={setPage} /> */}
-      </>
-}
-    </>
+          <Footer setPage={setPage} />
+          </>
+      )}
+    </ImageBackground>
   );
 }
 

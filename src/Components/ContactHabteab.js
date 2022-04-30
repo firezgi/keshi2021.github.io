@@ -8,6 +8,8 @@ import {
   View,
   Pressable,
   Linking,
+  Platform,
+  ImageBackground,
 } from "react-native";
 
 function ContactHabteab() {
@@ -23,8 +25,21 @@ function ContactHabteab() {
   };
 
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <ImageBackground
+        resizeMode={"stretch"}
+        style={{
+          flex: 1,
+          width: "100%",
+          height: "100%",
+        }}
+        source={
+          Platform.OS === "web"
+            ? require("../images/dark.jpg")
+            : require("../images/dark.jpg")
+        }
+      >
+    <SafeAreaView style={styles.container}>
+      <View>
         <Text style={styles.h1}>Contact Habteab</Text>
 
         <View>
@@ -54,36 +69,42 @@ function ContactHabteab() {
               onChangeText={text => setMessage(text)}
             value={message}
             placeholder="Type your Message!"
-            numberOfLines={6}
+            numberOfLines={12}
             multiline={true}
           />
         </View>
+        <View style={styles.buttonContainer}>
         <Pressable onPress={sendContactForm}>
-          <View>
-            <Text style={styles.btn}>Submit</Text>
+          <View style={styles.btn}>
+            <Text>Submit</Text>
           </View>
         </Pressable>
+        </View>
       </View>
     </SafeAreaView>
+    </ImageBackground>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#abaec4",
     alignItems: "center",
     paddingBottom:200,
-    paddingTop:20
+    paddingTop:20,
+    paddingStart: 10,
   },
   h1: {
-    fontSize: 20,
+    fontSize: 36,
     fontWeight: "bold",
     marginBottom: 20,
+    color:"#6df7de",
   },
   h3: {
     fontSize: 16,
-    // fontWeight: "bold",
-    marginTop: 10,
+    fontWeight: "bold",
+    marginTop: 20,
+    marginBottom: 10,
+    color:"#6df7de",
   },
   bold: {
     fontWeight: "bold",
@@ -104,27 +125,36 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
     width: 300,
-    borderColor: "#063970",
+    borderColor: "#6df7de",
     borderWidth: 1,
     borderRadius:5,
     padding: 5,
+    color:"white",
+    backgroundColor:"#343436"
   },
   input1: {
     width: 300,
-    borderColor: "#063970",
+    borderColor: "#6df7de",
     borderWidth: 1,
     borderRadius:5,
     padding: 5,
-    color:"black"
+    color:"#6df7de",
+    backgroundColor:"#343436"
 },
 btn:{
     padding:10,
     borderColor:"black",
-    backgroundColor:"#063970",
+    backgroundColor:"#6df7de",
     borderRadius:10,
     margin:5,
     color:'white',
-    marginTop:10
+    marginTop:10,
+    alignItems:"center",
+    justifyContent:"center",
+    width:"80%"
+},
+buttonContainer:{
+  alignItems:"center"
 }
 
 });
