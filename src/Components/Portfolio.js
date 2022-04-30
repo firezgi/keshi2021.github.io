@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6df7de",
     // flexDirection:"row",
     // justifyContent:"center",
-    alignContainer:"center",
+    // alignContainer:"center",
     padding:2,
     borderRadius: 10,
   },

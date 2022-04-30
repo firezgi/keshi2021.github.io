@@ -27,7 +27,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   const window = useWindowDimensions();
   const breakpoint400 = 500;
-  const [page, setPage] = useState("Portfolio");
+  const [page, setPage] = useState("Profile");
   return (
     <ImageBackground
     resizeMode={"stretch"}

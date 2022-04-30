@@ -28,21 +28,26 @@ const CareerDevelopment = () => {
     >
       <ScrollView>
       <SafeAreaView style={styles.container}>
-        <View>
+        <View
+        style={{alignSelf: "center",
+        backgroundColor:"#343436",
+        alignContent:"center",
+        marginTop:5,
+        overflowWrap: "break-word",width:"80%"}}>
           <View style={styles.textContainer1}>
-            <Text style={styles.h1}>Career Development</Text>
+            <Text style={styles.topic}>Career Development</Text>
           </View>
           <View style={styles.textContainer}>
             <Text style={styles.h2}>Front-End Developer</Text>
             <Text style={styles.h1}>Bitwise Industries, AlphaWorks</Text>
-            <Text style={styles.h2}>Sep 2021-Current</Text>
+            <Text style={styles.h2}>Sep 2021 - Current</Text>
           </View>
           <FlatList
             data={[
               { key: "Developed UI workflows and wireframes." },
-              { key: "Built feature templates in React and React-native." },
+              { key: "Built responsive applications in React and React-native for web and mobile." },
               {
-                key: "Collaborated with QA,security,word press and design teammates to build applications.",
+                key: "Collaborated with QA,security,word press and design teammates to build responsive applications.",
               },
               { key: "Worked on frontend -JavaScript based web applications." },
             ]}
@@ -51,11 +56,16 @@ const CareerDevelopment = () => {
             )}
           />
         </View>
-        <View>
+        <View
+        style={{alignSelf: "center",
+        backgroundColor:"#343436",
+        alignContent:"center",
+        marginTop:5,
+        overflowWrap: "break-word",width:"80%"}}>
           <View style={styles.textContainer}>
             <Text style={styles.h2}>Accountant</Text>
             <Text style={styles.h1}>Eritrean Holy Trinity Church</Text>
-            <Text style={styles.h2}>Jan 2017-Feb 2021</Text>
+            <Text style={styles.h2}>Jan 2017 - Feb 2021</Text>
           </View>
           <FlatList
             data={[
@@ -102,15 +112,22 @@ const styles = StyleSheet.create({
     padding: 15,
     alignItems: "center",
   },
-  h1: {
+  topic: {
     fontSize: 36,
     fontWeight: "bold",
     marginBottom: 20,
     alignItems: "center",
     color: "#6df7de",
   },
-  h2: {
+  h1: {
     fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+    alignItems: "center",
+    color: "#6df7de",
+  },
+  h2: {
+    fontSize: 20,
     fontWeight: "bold",
     marginBottom: 10,
     color: "#6df7de",
@@ -123,16 +140,19 @@ const styles = StyleSheet.create({
     color: "#6df7de",
   },
   item: {
-    padding: 15,
+    padding: 10,
     fontSize: 18,
-    height: 44,
-    backgroundColor: "#343436",
-    borderRadius: 5,
-    paddingLeft: 85,
-    alignItems: "center",
-    alignContent: "center",
     color: "#6df7de",
-    height: 60,
+    // padding: 15,
+    // fontSize: 18,
+    // height: 44,
+    // backgroundColor: "#343436",
+    // borderRadius: 5,
+    // paddingLeft: 85,
+    // alignItems: "center",
+    // alignContent: "center",
+    // color: "#6df7de",
+    // height: 60,
   },
 });
 
