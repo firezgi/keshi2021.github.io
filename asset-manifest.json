@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/portofolio-native/static/js/app.ff2ce371.chunk.js",
-    "app.js.map": "/portofolio-native/static/js/app.ff2ce371.chunk.js.map",
+    "app.js": "/portofolio-native/static/js/app.58fc8520.chunk.js",
+    "app.js.map": "/portofolio-native/static/js/app.58fc8520.chunk.js.map",
     "runtime~app.js": "/portofolio-native/static/js/runtime~app.941f4f6d.js",
     "runtime~app.js.map": "/portofolio-native/static/js/runtime~app.941f4f6d.js.map",
-    "static/js/2.b991613b.chunk.js": "/portofolio-native/static/js/2.b991613b.chunk.js",
-    "static/js/2.b991613b.chunk.js.map": "/portofolio-native/static/js/2.b991613b.chunk.js.map",
+    "static/js/2.042f3b83.chunk.js": "/portofolio-native/static/js/2.042f3b83.chunk.js",
+    "static/js/2.042f3b83.chunk.js.map": "/portofolio-native/static/js/2.042f3b83.chunk.js.map",
     "fonts/AntDesign.ttf": "/portofolio-native/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/portofolio-native/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/portofolio-native/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/portofolio-native/index.html",
     "manifest.json": "/portofolio-native/manifest.json",
     "serve.json": "/portofolio-native/serve.json",
-    "static/js/2.b991613b.chunk.js.LICENSE.txt": "/portofolio-native/static/js/2.b991613b.chunk.js.LICENSE.txt",
+    "static/js/2.042f3b83.chunk.js.LICENSE.txt": "/portofolio-native/static/js/2.042f3b83.chunk.js.LICENSE.txt",
     "static/media/Decidr.png": "/portofolio-native/static/media/Decidr.874cecff.png",
     "static/media/E-Card.png": "/portofolio-native/static/media/E-Card.4a118a97.png",
     "static/media/HountedHouseGame.png": "/portofolio-native/static/media/HountedHouseGame.e053cef9.png",
@@ -35,7 +35,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.941f4f6d.js",
-    "static/js/2.b991613b.chunk.js",
-    "static/js/app.ff2ce371.chunk.js"
+    "static/js/2.042f3b83.chunk.js",
+    "static/js/app.58fc8520.chunk.js"
   ]
 }
