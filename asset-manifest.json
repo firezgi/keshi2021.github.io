@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/portofolio-native/static/js/app.58fc8520.chunk.js",
-    "app.js.map": "/portofolio-native/static/js/app.58fc8520.chunk.js.map",
+    "app.js": "/portofolio-native/static/js/app.63bef63b.chunk.js",
+    "app.js.map": "/portofolio-native/static/js/app.63bef63b.chunk.js.map",
     "runtime~app.js": "/portofolio-native/static/js/runtime~app.941f4f6d.js",
     "runtime~app.js.map": "/portofolio-native/static/js/runtime~app.941f4f6d.js.map",
     "static/js/2.042f3b83.chunk.js": "/portofolio-native/static/js/2.042f3b83.chunk.js",
@@ -36,6 +36,6 @@
   "entrypoints": [
     "static/js/runtime~app.941f4f6d.js",
     "static/js/2.042f3b83.chunk.js",
-    "static/js/app.58fc8520.chunk.js"
+    "static/js/app.63bef63b.chunk.js"
   ]
 }
