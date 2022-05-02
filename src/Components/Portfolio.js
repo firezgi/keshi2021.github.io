@@ -64,6 +64,11 @@ function Portfolio() {
                         size={24}
                         onPress={() => Linking.openURL("https://github.com/luceroweb/trivia-and-chill")}
                       />
+                      {/* <FontAwesome5
+                        name="linkedin"
+                        size={24}
+                        onPress={() => Linking.openURL("https://www.linkedin.com/feed/")}
+                      /> */}
                     </View>
                     <View style={styles.iconContainer}>
                       <TouchableOpacity

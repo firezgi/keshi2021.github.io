@@ -1,3 +1,4 @@
+import { FontAwesome5 } from "@expo/vector-icons";
 import {
   ImageBackground,
   StyleSheet,
