@@ -2,8 +2,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "lang": "en",
-  "name": "portofolio-native",
-  "short_name": "portofolio-native",
+  "name": "habteab-firezgi-portfolio",
+  "short_name": "habteab-firezgi-portfolio",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [
