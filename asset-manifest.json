@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/static/js/app.cf8cbb67.chunk.js",
-    "app.js.map": "/static/js/app.cf8cbb67.chunk.js.map",
+    "app.js": "/static/js/app.aed7c366.chunk.js",
+    "app.js.map": "/static/js/app.aed7c366.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
     "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.56d87d16.chunk.js": "/static/js/2.56d87d16.chunk.js",
-    "static/js/2.56d87d16.chunk.js.map": "/static/js/2.56d87d16.chunk.js.map",
+    "static/js/2.93c07241.chunk.js": "/static/js/2.93c07241.chunk.js",
+    "static/js/2.93c07241.chunk.js.map": "/static/js/2.93c07241.chunk.js.map",
     "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/./fonts/Feather.ttf",
@@ -24,18 +24,19 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.56d87d16.chunk.js.LICENSE.txt": "/static/js/2.56d87d16.chunk.js.LICENSE.txt",
+    "static/js/2.93c07241.chunk.js.LICENSE.txt": "/static/js/2.93c07241.chunk.js.LICENSE.txt",
     "static/media/Decidr.png": "/static/media/Decidr.874cecff.png",
     "static/media/E-Card.png": "/static/media/E-Card.4a118a97.png",
     "static/media/HountedHouseGame.png": "/static/media/HountedHouseGame.e053cef9.png",
     "static/media/Trivia-chill.png": "/static/media/Trivia-chill.80153220.png",
+    "static/media/codeBright.jpg": "/static/media/codeBright.ae3ca2c1.jpg",
     "static/media/dark.jpg": "/static/media/dark.2be22c07.jpg",
     "static/media/hab.png": "/static/media/hab.488b03d6.png",
     "static/media/marvelMobile.png": "/static/media/marvelMobile.24d016dd.png"
   },
   "entrypoints": [
     "static/js/runtime~app.2e9f1821.js",
-    "static/js/2.56d87d16.chunk.js",
-    "static/js/app.cf8cbb67.chunk.js"
+    "static/js/2.93c07241.chunk.js",
+    "static/js/app.aed7c366.chunk.js"
   ]
 }

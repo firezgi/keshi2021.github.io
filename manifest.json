@@ -1,11 +1,19 @@
 {
-  "background_color": "#ffffff",
+  "background_color": "#444444",
   "display": "standalone",
   "lang": "en",
   "name": "habteab-firezgi-portfolio",
   "short_name": "habteab-firezgi-portfolio",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "http://play.google.com/store/apps/details?id=com.gspiderman.habteabfirezgiportfolio",
+      "id": "com.gspiderman.habteabfirezgiportfolio"
+    }
+  ],
+  "prefer_related_applications": true,
   "icons": [
     {
       "src": "/pwa/chrome-icon/chrome-icon-144.png",
