@@ -33,9 +33,7 @@ function ContactHabteab() {
           height: "100%",
         }}
         source={
-          Platform.OS === "web"
-            ? require("../images/dark.jpg")
-            : require("../images/dark.jpg")
+            require("../images/codeBright.jpg")
         }
       >
     <SafeAreaView style={styles.container}>
@@ -49,6 +47,7 @@ function ContactHabteab() {
             onChangeText={e => setName(e)}
             value={name}
             placeholder="Insert your Name!"
+            placeholderTextColor="white"
           />
         </View>
 
@@ -59,6 +58,7 @@ function ContactHabteab() {
               onChangeText={text => setSubject(text)}
               value={subject}
             placeholder="Insert Subject!"
+            placeholderTextColor="white"
           />
         </View>
 
@@ -69,14 +69,15 @@ function ContactHabteab() {
               onChangeText={text => setMessage(text)}
             value={message}
             placeholder="Type your Message!"
-            numberOfLines={12}
+            placeholderTextColor="white"
+            numberOfLines={8}
             multiline={true}
           />
         </View>
         <View style={styles.buttonContainer}>
         <Pressable onPress={sendContactForm}>
           <View style={styles.btn}>
-            <Text>Submit</Text>
+            <Text style={{color:"#b9bf08"}}>Submit</Text>
           </View>
         </Pressable>
         </View>
@@ -97,14 +98,15 @@ const styles = StyleSheet.create({
     fontSize: 36,
     fontWeight: "bold",
     marginBottom: 20,
-    color:"#6df7de",
+    color:"#b9bf08",
   },
   h3: {
     fontSize: 16,
     fontWeight: "bold",
     marginTop: 20,
     marginBottom: 10,
-    color:"#6df7de",
+    color:"#b9bf08",
+    backgroundColor:"#020f4d",
   },
   bold: {
     fontWeight: "bold",
@@ -125,7 +127,7 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
     width: 300,
-    borderColor: "#6df7de",
+    borderColor: "#b9bf08",
     borderWidth: 1,
     borderRadius:5,
     padding: 5,
@@ -134,20 +136,20 @@ const styles = StyleSheet.create({
   },
   input1: {
     width: 300,
-    borderColor: "#6df7de",
+    borderColor: "#b9bf08",
     borderWidth: 1,
     borderRadius:5,
     padding: 5,
-    color:"#6df7de",
+    color:"white",
     backgroundColor:"#343436"
 },
 btn:{
     padding:10,
     borderColor:"black",
-    backgroundColor:"#6df7de",
+    backgroundColor:"#020f4d",
     borderRadius:10,
     margin:5,
-    color:'white',
+    color:'#b9bf08',
     marginTop:10,
     alignItems:"center",
     justifyContent:"center",

@@ -30,38 +30,42 @@ export default function App() {
   const [page, setPage] = useState("Profile");
   return (
     <ImageBackground
-    resizeMode={"stretch"}
-    style={styles.container}
-    source={
-      Platform.OS === "web"
-        ? require("./src/images/dark.jpg")
-        : require("./src/images/dark.jpg")
-    }
-  >
-    {window.width > breakpoint400 ?
-      <View>
-        <Header setPage={setPage} />
-        {page === "Profile" && <Profile />}
-        {page === "CareerDevelopment" && <CareerDevelopment />}
-        {page === "Portfolio" && <Portfolio />}
-        {page === "Education" && <Education />}
-        {page === "ContactHabteab" && <ContactHabteab />}
-          
+      resizeMode={"stretch"}
+      style={styles.container}
+      source={
+        Platform.OS === "web"
+          ? require("./src/images/dark.jpg")
+          : require("./src/images/dark.jpg")
+      }
+    >
+      {/* {window.width > breakpoint400 ? (
+        <SafeAreaView>
+          <Header setPage={setPage} />
+          <ScrollView>
+          {page === "Profile" && <Profile />}
+          {page === "CareerDevelopment" && <CareerDevelopment />}
+          {page === "Portfolio" && <Portfolio />}
+          {page === "Education" && <Education />}
+          {page === "ContactHabteab" && <ContactHabteab />}
+          </ScrollView>
           <Footer setPage={setPage} style={styles.footer} />
-        </View>
-       : (<>
-      <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Profile">
-          <Drawer.Screen name="Profile" component={Profile} />
-          <Drawer.Screen name="Career" component={CareerDevelopment} />
-          <Drawer.Screen name="Portfolio" component={Portfolio} />
-          <Drawer.Screen name="Education" component={Education} />
-          <Drawer.Screen name="Contact" component={ContactHabteab} />
-        </Drawer.Navigator>
-      </NavigationContainer>
+        </SafeAreaView>
+      ) : (
+        <> */}
+        {/* <SafeAreaView> */}
+          <NavigationContainer >
+            <Drawer.Navigator initialRouteName="Contact" style={{backgroundColor:"blue",color:"red"}}>
+              <Drawer.Screen name="Profile" component={Profile} />
+              <Drawer.Screen name="Career" component={CareerDevelopment} />
+              <Drawer.Screen name="Portfolio" component={Portfolio} />
+              <Drawer.Screen name="Education" component={Education} />
+              <Drawer.Screen name="Contact" component={ContactHabteab} />
+            </Drawer.Navigator>
+          </NavigationContainer>
+          {/* </SafeAreaView> */}
           <Footer setPage={setPage} />
-          </>
-      )}
+        {/* </> */}
+      {/* )} */}
     </ImageBackground>
   );
 }
@@ -69,7 +73,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
     width: "100%",
   },
+  footer:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    bottom: 10,
+    left: 10,
+    right: 10,
+    borderRadius: 10,
+  }
 });

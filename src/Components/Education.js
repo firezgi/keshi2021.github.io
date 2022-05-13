@@ -11,7 +11,7 @@ function Education() {
         }}
         source={
           Platform.OS === "web"
-            ? require("../images/dark.jpg")
+            ? require("../images/codeBright.jpg")
             : require("../images/dark.jpg")
         }
       >
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   },
 
   textContainer:{
-    backgroundColor:"#343436",
+    backgroundColor:"#020f4d",
     borderRadius:5,
     marginBottom:10,
     padding:15,
@@ -76,26 +76,26 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 20,
     alignItems: "center",
-    color:"#6df7de",
+    color:"#b9bf08",
   },
   h2: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 10,
-    color:"#6df7de",
+    color:"#b9bf08",
     paddingLeft:10
   },
   h3:{
     fontSize: 16,
     fontWeight: "bold",
     marginBottom: 10,
-    color:"#6df7de",
+    color:"#b9bf08",
   },
   h4:{
     fontSize: 16,
     fontWeight: "bold",
     marginBottom: 10,
-    color:"#6df7de",
+    color:"#b9bf08",
     paddingBottom:30
   },
   bold: {

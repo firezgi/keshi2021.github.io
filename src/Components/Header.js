@@ -3,13 +3,13 @@ import {
   View,
   StyleSheet,
   Text,
-  Pressable
+  Pressable,
+  SafeAreaView
 } from "react-native";
 function Header({ setPage }) {
   
   return (
-    < View style={styles.container}>
-        
+    <SafeAreaView style={styles.container}>        
           <Pressable onPress={() => setPage("Profile")}>
             <Text style={styles.navtext} name="Profile">Profile</Text>
           </Pressable>
@@ -25,7 +25,7 @@ function Header({ setPage }) {
           <Pressable onPress={() => setPage("ContactHabteab")}>
             <Text style={styles.navtext} name="">Contact</Text>
           </Pressable>
-    </View>
+    </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({

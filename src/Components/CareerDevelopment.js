@@ -21,19 +21,18 @@ const CareerDevelopment = () => {
         height: "100%",
       }}
       source={
-        Platform.OS === "web"
-          ? require("../images/dark.jpg")
-          : require("../images/dark.jpg")
+          require("../images/codeBright.jpg")
       }
     >
       <ScrollView>
       <SafeAreaView style={styles.container}>
         <View
         style={{alignSelf: "center",
-        backgroundColor:"#343436",
         alignContent:"center",
         marginTop:5,
-        overflowWrap: "break-word",width:"80%"}}>
+        overflowWrap: "break-word",
+        width:"60%",
+        maxWidth:"80%"}}>
           <View style={styles.textContainer1}>
             <Text style={styles.topic}>Career Development</Text>
           </View>
@@ -44,12 +43,12 @@ const CareerDevelopment = () => {
           </View>
           <FlatList
             data={[
-              { key: "Developed UI workflows and wireframes." },
-              { key: "Built responsive applications in React and React-native for web and mobile." },
+              { key: "- Developed UI workflows and wireframes." },
+              { key: "- Built responsive applications in React and React-native for web and mobile." },
               {
-                key: "Collaborated with QA,security,word press and design teammates to build responsive applications.",
+                key: "- Collaborated with QA,security,word press and design teammates to build responsive applications.",
               },
-              { key: "Worked on frontend -JavaScript based web applications." },
+              { key: "- Worked on frontend -JavaScript based web applications." },
             ]}
             renderItem={({ item }) => (
               <Text style={styles.item}>{item.key}</Text>
@@ -58,10 +57,12 @@ const CareerDevelopment = () => {
         </View>
         <View
         style={{alignSelf: "center",
-        backgroundColor:"#343436",
+        backgroundColor:"#020f4d",
         alignContent:"center",
         marginTop:5,
-        overflowWrap: "break-word",width:"80%"}}>
+        overflowWrap: "break-word",
+        width:"60%",
+        maxWidth:"80%"}}>
           <View style={styles.textContainer}>
             <Text style={styles.h2}>Accountant</Text>
             <Text style={styles.h1}>Eritrean Holy Trinity Church</Text>
@@ -69,13 +70,13 @@ const CareerDevelopment = () => {
           </View>
           <FlatList
             data={[
-              { key: "Created financial reports and managed a yearly budget." },
-              { key: "Analyzed, examined, and interpreted account records. " },
+              { key: "- Created financial reports and managed a yearly budget." },
+              { key: "- Analyzed, examined, and interpreted account records. " },
               {
-                key: "Performed process analysis and communicated recommendations to management.",
+                key: "- Performed process analysis and communicated recommendations to management.",
               },
               {
-                key: "Process journal entries and perform accounting corrections to ensure accurate records.",
+                key: "- Process journal entries and perform accounting corrections to ensure accurate records.",
               },
             ]}
             renderItem={({ item }) => (
@@ -99,11 +100,14 @@ const styles = StyleSheet.create({
   },
 
   textContainer: {
-    backgroundColor: "#343436",
+    backgroundColor: "#020f4d",
     borderRadius: 5,
     padding: 15,
     alignItems: "center",
     justifyContent: "center",
+    width:"100%",
+    alignSelf:"center",
+    marginBottom:2
   },
 
   textContainer1: {
@@ -117,42 +121,35 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 20,
     alignItems: "center",
-    color: "#6df7de",
+    color: "#b9bf08",
   },
   h1: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
     alignItems: "center",
-    color: "#6df7de",
+    color: "#b9bf08",
   },
   h2: {
     fontSize: 20,
     fontWeight: "bold",
     marginBottom: 10,
-    color: "#6df7de",
+    color: "#b9bf08",
     paddingLeft: 10,
   },
   h3: {
     fontSize: 16,
     fontWeight: "bold",
     marginBottom: 10,
-    color: "#6df7de",
+    color: "#b9bf08",
   },
   item: {
+    backgroundColor: "#020f4d",
     padding: 10,
     fontSize: 18,
-    color: "#6df7de",
-    // padding: 15,
-    // fontSize: 18,
-    // height: 44,
-    // backgroundColor: "#343436",
-    // borderRadius: 5,
-    // paddingLeft: 85,
-    // alignItems: "center",
-    // alignContent: "center",
-    // color: "#6df7de",
-    // height: 60,
+    color: "#b9bf08",
+    alignSelf:"center",
+    width:Platform.OS ==="web"?"80%":"100%"
   },
 });
 

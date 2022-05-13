@@ -23,8 +23,8 @@ function Footer({ navigation, setPage }) {
           padding: 10,
         }}
       >
-        <Text style={styles.navtext} style={styles.navtext}>
-          1501 almaden expressway apt 6153 San Jose,CA 95125
+        <Text style={styles.navtext}>
+          1501 almaden expressway San Jose,CA 95125
         </Text>
 
         <Text style={styles.navtext}>(832)206-8163</Text>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   navtext: {
-    color: "white",
+    color: "#b9bf08",
   },
   h2: {
     fontSize: 16,
